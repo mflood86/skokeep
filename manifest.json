@@ -1,0 +1,16 @@
+{
+    "name": "SkoKeep",
+    "short_name": "SkoKeep",
+    "start_url": ".",
+    "background_color": "#ffffff",
+    "theme_color": "#000000",
+    "orientation": "portrait",
+    "display": "fullscreen",
+    "icons": [
+        {
+            "src": "icon.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ]
+}
