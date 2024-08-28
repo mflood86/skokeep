@@ -6,14 +6,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Use viewport height */
-    overflow: hidden; /* Prevent scrolling */
+    height: calc(var(--vh, 1vh) * 100);
+    overflow-y: auto;
     background-color: #282828;
 }
 
 .container {
     width: 100vw; /* Use viewport width */
-    height: 100vh; /* Use viewport height */
+    height: calc(var(--vh, 1vh) * 100);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -61,12 +61,12 @@ body {
     display: flex;
     flex-wrap: wrap; /* Allow for multiple rows */
     justify-content: center;
-    min-height: 70px; /* Reserve space for two rows of assigned balls */
+    min-height: 75px; /* Reserve space for two rows of assigned balls */
 }
 
 .assigned-balls .ball-icon {
-    width: 33px; /* Set the size of the miniature icons to 33% */
-    height: 33px; /* Ensure the icons are square */
+    width: 30px; /* Set the size of the miniature icons to 33% */
+    height: 30px; /* Ensure the icons are square */
     background-size: cover;
     background-position: center;
     margin: 2px; /* Add some spacing between icons */
@@ -76,7 +76,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
-    width: 100%;
+    width: 90%;
     max-width: 600px;
     height: auto; /* Allow vertical expansion */
 }

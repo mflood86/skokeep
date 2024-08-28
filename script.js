@@ -113,3 +113,16 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     setActivePlayer(1);
 });
+
+function setViewportHeight() {
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+}
+
+// Initial calculation
+setViewportHeight();
+
+// Recalculate on resize and orientation change
+window.addEventListener('resize', setViewportHeight);
+window.addEventListener('orientationchange', setViewportHeight);
+
